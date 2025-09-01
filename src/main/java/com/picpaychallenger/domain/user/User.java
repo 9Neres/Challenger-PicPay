@@ -1,10 +1,7 @@
 package com.picpaychallenger.domain.user;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.math.BigDecimal;
 
@@ -13,6 +10,7 @@ import java.math.BigDecimal;
 @Setter
 @Getter
 @AllArgsConstructor
+@NoArgsConstructor
 @EqualsAndHashCode(of ="id")
 public class User{
 

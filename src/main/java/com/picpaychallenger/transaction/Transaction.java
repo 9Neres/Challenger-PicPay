@@ -1,23 +1,21 @@
-package com.picpaychallenger.domain.user.transection;
+package com.picpaychallenger.transaction;
 
 
 import com.picpaychallenger.domain.user.User;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-@Entity(name = "transections")
-@Table(name = "transections")
+@Entity(name = "transactions")
+@Table(name = "transactions")
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 @EqualsAndHashCode(of = "id")
-public class Transection {
+public class Transaction {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Generated value id in BD
@@ -25,11 +23,11 @@ public class Transection {
 
     private BigDecimal amount;
 
-    @ManyToMany // creating relationship between table
+    @ManyToOne // creating relationship between table
     @JoinColumn(name="sender_id")
     private User sender;
 
-    @ManyToMany
+    @ManyToOne
     @JoinColumn(name="receiver_id")
     private User receiver;
 
