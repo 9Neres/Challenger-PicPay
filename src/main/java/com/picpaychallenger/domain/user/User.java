@@ -1,5 +1,6 @@
 package com.picpaychallenger.domain.user;
 
+import com.picpaychallenger.dtos.UserDTO;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -34,5 +35,15 @@ public class User{
 
     @Enumerated(EnumType.STRING)
     private UserType userType;
+
+
+    public User(UserDTO data){
+        this.firstName = data.firstName();
+        this.lastName = data.LastName();
+        this.balance = data.balance();
+        this.userType = data.userType();
+        this.password = data.password();
+        this.email = data.email();
+    }
 
 }
