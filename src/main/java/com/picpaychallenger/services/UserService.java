@@ -2,11 +2,13 @@ package com.picpaychallenger.services;
 
 import com.picpaychallenger.domain.user.User;
 import com.picpaychallenger.domain.user.UserType;
+import com.picpaychallenger.dtos.UserDTO;
 import com.picpaychallenger.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Service
 public class UserService {
@@ -32,6 +34,15 @@ public class UserService {
         return this.repository.findUserById(id).orElseThrow(() -> new Exception("User not found"));
     }
 
+    public User createUser(UserDTO data){
+        User newUser = new User(data);
+        this.saveUser(newUser);
+        return newUser;
+    }
+
+    public List<User> getAllUsers(){
+        return this.repository.findAll();
+    }
 
     public void saveUser(User user){
         this.repository.save(user);
