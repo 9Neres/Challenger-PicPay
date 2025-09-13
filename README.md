@@ -1,17 +1,44 @@
-*Desafio Picpay Simplificado - (Back-end)*
+<div align="center">
+  <h1> Desafio PicPay Simplificado - (Back-end)</h1>
+  
+  <img src="style/picpayimage.jpg" alt="PicPay Challenge" width="400">
+  
+  <br><br>
+  
+  <p><em>Projeto desenvolvido como solução para o desafio técnico do PicPay</em></p>
+</div>
 
-![Picpay Challenge](style/picpayimage.jpg)
-Esse projeto já finalizado foi feito usando:
+---
 
-**Java**<br>
-**Maven**<br>
-**Spring Boot: Lombok , DevTools, JPA**<br>
-**H2 data base**<br>
-**Insomnia: JSON**<br>
-**RestAPI: GET, POST**<br>
+## Stacks Usadas:
 
-O que foi feito foi o proposto pelo **Picpay**, usando programação no desafio.
+<div align="center">
 
-[(Link Do Desafio)](https://github.com/PicPay/picpay-desafio-backend)
+**Java** • **Maven** • **Spring Boot**
 
-*(Em partes do código usei o Claude 4 Sonnet do IntelliJ Ultimate)*
+**Lombok** • **DevTools** • **JPA** • **H2 Database**
+
+**Insomnia** • **REST API**
+
+</div>
+
+---
+
+## 📋 Sobre o Projeto
+
+Este projeto foi desenvolvido seguindo as especificações do desafio técnico proposto pelo **PicPay**.
+
+## 🔗 Links:
+
+<div align="center">
+  
+[![Desafio pelo Picpay](https://img.shields.io/badge/Desafio_Original-PicPay-00D924?style=for-the-badge&logo=github)](https://github.com/PicPay/picpay-desafio-backend)
+
+</div>
+
+---
+
+<div align="center">
+  <br>
+  <sub><em>(Em partes do código usei o Claude 4 Sonnet do IntelliJ Ultimate)</em></sub>
+</div>
