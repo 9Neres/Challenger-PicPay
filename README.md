@@ -1,5 +1,6 @@
 *Desafio Picpay Simplificado - (Back-end)*
 
+![Picpay Challenge](style/picpayimage.jpg)
 Esse projeto já finalizado foi feito usando:
 
 **Java**<br>
